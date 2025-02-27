@@ -67,10 +67,10 @@ a{
 img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
 }
 .pad_both{
-    padding: 150px 0;
+    padding: 100px 0;
 }
 .container{
     max-width: 1540px;
@@ -79,7 +79,10 @@ img{
 }
 .btn{
     padding: 15px 30px;
-    width: fit-content;
+    background-color: var(--yellow);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: start;
 }
 .btn a{
     color: var(--red);
@@ -105,7 +108,6 @@ Header{
 .nav-panel ul{
     display: flex;
     gap: 40px;
-    justify-content: end;
     padding: 26px;
 }
 .nav-panel ul a:nth-child(1){
@@ -131,8 +133,6 @@ Header{
     padding-top: 51px;
 }
 .hero-left h3{
-    font-size: 48px;
-    font-weight: 500;
     margin-bottom: 21px;
 }
 span{
@@ -148,27 +148,46 @@ span{
     padding-bottom: 64px;
 }
 /*************Hero Bottom***************/
-.hero-bottom{
-    position: relative;
+.hero-bottom-main {
+    display: flex;
+    justify-content: center;
 }
-.hero-content{
+.hero-images{
+    display: none;
+    width: 100%;
+}
+.hero-content {
     display: flex;
     flex-direction: column;
-    gap: 39px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 39px;
+    padding-top: 5%;
     position: absolute;
 }
-.highlight{
+.highlight {
     background-color: var(--yellow);
-    color: var(--red);
     padding: 5px 20px;
+    border-radius: 70px;
+    color: var(--red);
     font-size: 30px;
     font-weight: 300;
     font-family: 'Nunito';
-    border-radius: 70px;
 }
-/**********************************/
+.slider-point{
+    display: flex;
+    gap: 17px;
+}
+.indicator {
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    background-color: var(--white);
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    border:1px solid var(--black);
+}
+/***************FoodWaste*******************/
 .FoodWaste{
     background-image:linear-gradient(to right,var(--green),var(--yellowgreen));
     display: flex;
@@ -183,6 +202,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: start;
     gap: 24px;
 }
 .left-content{
@@ -192,8 +212,6 @@ span{
 }
 .FoodWaste-img img{
     border-radius: 40px;
-    width: 470px;
-    height: 470px;
 }
 .wht-btn{
     background-color: var(--white);
@@ -227,6 +245,7 @@ span{
 .service-card{
     display: flex;
     gap: 60px;
+    justify-content: center;
 }
 .card{
     display: flex;
@@ -249,7 +268,7 @@ span{
     border-radius: 60px;
     align-items: center;
 }
-/****************LifeCycle********************************/
+/***********************Product List**************************/
 .product-list-main{
     background-image: linear-gradient(to left,var(--green),var(--yellowgreen,var(--white)));
     padding: 100px 100px 172px 100px;
@@ -269,6 +288,7 @@ span{
 .subtext{
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 24px;
 }
 .subtext p{
@@ -282,7 +302,7 @@ span{
 .image-list{
     display: none;
     flex-direction: row;
-    gap: 137px;
+    justify-content: space-between;
 }
 .image-box{
     background-color: var(--white);
@@ -412,11 +432,9 @@ span{
     display:inline-flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
 }
-.yellow2-btn a{
-    text-align: center;
-    color: var(--red);
-}
+
 /***********************Hygenic********************************/
 .hygenic{
     background-image: linear-gradient(to right,var(--green),var(--yellowgreen));
@@ -439,13 +457,9 @@ span{
     gap: 230px;     
 }
 .quotes{
-    display: flex;
-    gap: 12px;
     padding-top: 200px;
-}
-.quotes img{
-    width: 17px;
-    height: 21px;
+    font-size: 27px;
+    letter-spacing: 15px;
 }
 .testimonies{
     display: flex;
@@ -464,22 +478,17 @@ span{
     border: 1px solid var(--green);
 }
 .feedback-card p{
-    padding: 12px 15px;
+    padding: 0 15px;
 }
 .card-top{
     position: relative;
-    padding-bottom: 17px;
 }
 .upper-quote{
-    width: 17px;
-    height: 21px;
+    font-size: 24px;
 }
 .lower-quote{
-    width: 17px;
-    height: 21px;
-    position: absolute;
-    right: 0;
-    top: 180px;   
+    font-size: 24px;
+    text-align: right;
 }
 .card-btm{
     border-top: 1px solid var(--green);
@@ -509,34 +518,47 @@ span{
 /********************Footer**********************************/
 footer{
     background-image: linear-gradient(to right,var(--white),var(--yellowgreen),var(--green));
-    position: relative;
 }
-.footer::after{
-    content: "";
-    background-image: url(./assets/hero.png);
+div.footer-main::after{
+    content: '';
+    background: url(./assets/footer-image.png);
     position: absolute;
     background-repeat: no-repeat;
     background-size: 100%;
-    top: 0;
-    right: 0;
+    width: 685px;
+    height: 607px;
+    top: -241px;
+    right: -209px;
+    transform: rotate(22deg);
 } 
 .footer-main{
     display: flex;
     flex-direction: column;
     gap: 90px;
+    position: relative;
+    overflow: hidden;
 }
 .footer-top{
     width: 45%;
 }
 .footer-bottom{
     display: flex;
+    gap: 350px;
+}
+.contact{
+    display: flex;
+    gap: 21px;
+    width: 60%;
+}
+.links{
+    display: flex;
+    gap: 50px;
     justify-content: space-between;
 }
 .contact-info{
     display: flex;
     flex-direction: column;
-    gap: 21px;
-    width: 20%;
+    gap: 30px;
 }
 .contact-links a{
     display: flex;
@@ -546,7 +568,7 @@ footer{
     color: var(--darkgreen);
 }
 .contact-links a img{
-    width: 3%;
+    width: 5%;
 }
 .contact-links h4{
     color: var(--darkgrey);
@@ -565,7 +587,7 @@ footer{
 .quick-links ul{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    column-gap: auto;
+    column-gap: 21px;
     row-gap: 7px;
 }
 .quick-links ul li{
@@ -579,6 +601,10 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: flex-end;
+}
+.parter-logo img{
+    flex: 1;
 }
 /***********************terms**************************/
 .terms{
@@ -599,3 +625,143 @@ footer{
     padding: 4px 10px;
 }
 
+/*********************Responsive********************************/
+@media screen and (max-width:1024px){
+    .container{
+        width: 1024px;
+        padding: 0 50px;
+        margin: 0;
+    }
+    .image{
+        padding-top: 30px;
+    }
+    h2,.title_h2{
+        font-size: 50px;
+    }
+    .FoodWaste-main{
+        gap: 0px;
+    }
+    .services-content{
+        padding: 0 100px;
+    }
+    .product-list-main{
+        padding: 100px;
+    }
+    .quotes{
+        display: none;
+    }
+    .card-btm-content{
+        padding: 10px 20px;
+    }
+    .footer-top{
+        width: 35%;
+    }
+    .footer-bottom{
+        gap: 150px;
+    }
+    .contact-links a img{
+        width: 7%;
+    }
+    .parter-logo{
+        gap: 20px;
+    }
+    a{
+        font-size: 16px;
+    }
+    div.footer-main::after{
+        width: 585px;
+        height: 507px;
+        transform: rotate(12deg);
+    }   
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width: 768px;
+        padding: 0 50px;
+        margin: 0;
+    }
+    .nav-panel ul{
+        gap: 20px;
+    }
+    .hero-main{
+        justify-content: space-between;
+    }
+    .hero-left{
+        width: 100%;
+    }
+    .hero-right{
+        display: none;
+    }
+    .image{
+        padding-top: 10px;
+        width: 20%;
+    }
+    h2,.title_h2{
+        font-size: 40px;
+    }
+    .highlight{
+        font-size: 20px;
+    }
+    .btn{
+        padding: 10px 20px;
+    }
+    .product-list-main{
+        padding: 50px;
+        gap: 25px;
+    }
+    h5,.title_h5{
+        font-size: 20px;
+    }
+    .services-content{
+        padding: 0 50px;
+    }
+    .service-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .process-chart{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .serial-num{
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+    }
+    /*.card-btm-content{
+        padding: 10px 15px;
+    }
+    h6,.title_h6{
+        font-size: 17px;
+    }
+    .author-name p{
+        font-size: 13px;
+    }
+    .author-img{
+        display: none;
+    }*/
+    
+    .feedbacks{
+        display: grid;
+    }
+    .author-name{
+        width: 20%;
+    }
+    .author-img{
+        flex: none;
+    }
+    .footer-bottom{
+        flex-direction: column;
+        gap: 100px;
+    }
+    .parter-logo{
+        flex-direction: row;
+    }
+    div.footer-main::after{
+        width: 485px;
+        height: 407px;
+        transform: rotate(12deg);
+        top: -190px;
+    }
+}

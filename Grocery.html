@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link rel="stylesheet" href="Grocery.css">
-    <title>Document</title>
-</head>
+    <title>Grocery</title>
+</head>                            
 <body>
-    <Header>
+    <Header>                               
         <div class='container'>
             <div class='header-main'>
                 <div class="header-logo">
@@ -32,7 +32,7 @@
             <div class="hero-main">
                 <div class="hero-left">
                     <h3 class="title_h3">HAAF. HEUKÄUFER. Packaging</h3>
-                    <h6 class="title_h6">Verpackungslösungen für optimalen <br/>Produktschutz.<br/>
+                    <h6 class="title_h6">Verpackungslösungen für optimalen Produktschutz.<br/>
                         <span>Hygienisch. Sicher. Nachhaltig. </span><br/>
                         Darauf können Sie sich verlassen. <br/>
                         Seit über 60 Jahren.
@@ -49,13 +49,36 @@
     </section>
     <!--Hero Bottom-->
     <section class="hero-bottom">
-        <img src="./assets/photo.jpg"/>
-        <!--<div class="hero-content">
-            <h2>HYGIENISCH. SICHER. NACHHALTIG.</h2>
-            <div class="highlight">
-                UNSER ANSPORN. UNSER BEITRAG.
+        <div class="hero-bottom-main">
+            <div class="hero-images">
+                <img src="./assets/photo.jpg"/>
             </div>
-        </div>-->
+            <div class="hero-images">
+                <img src="./assets/photo.jpg"/>
+            </div>
+            <div class="hero-images">
+                <img src="./assets/photo.jpg"/>
+            </div>
+            <div class="hero-images">
+                <img src="./assets/photo.jpg"/>
+            </div>
+            <div class="hero-images">
+                <img src="./assets/photo.jpg"/>
+            </div>                       
+            <div class="hero-content"> 
+                <h2 class="title_h2">HYGIENISCH. SICHER. NACHHALTIG.</h2>
+                <div class="highlight">
+                    UNSER ANSPORN. UNSER BEITRAG.
+                </div>
+                <div class="slider-point">
+                    <span class="indicator" onclick="currentSlides(1)"></span> 
+                    <span class="indicator" onclick="currentSlides(2)"></span> 
+                    <span class="indicator" onclick="currentSlides(3)"></span>
+                    <span class="indicator" onclick="currentSlides(4)"></span> 
+                    <span class="indicator" onclick="currentSlides(5)"></span>  
+                </div>
+            </div>
+        </div>
     </section>
     <!--FoodWaste-->
    <section class="FoodWaste pad_both">
@@ -128,7 +151,7 @@
             </div>
         </div>
     </section>
-    <!--Lifecycle-->
+    <!--Product-list-->
     <section class="product-list">
         <div class="container">
             <div class="product-list-main">
@@ -233,9 +256,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrow1">
+                    <!--<div class="arrow1">
                         <img src="./assets/arrow.png"/>
-                    </div>
+                    </div>-->
                     <div class="step">
                         <div class="serial-num">2.</div>
                         <div class="step-details">
@@ -254,9 +277,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrow2">
+                    <!--<div class="arrow2">
                         <img src="./assets/arrow.png"/>
-                    </div>
+                    </div>-->
                     <div class="step">
                         <div class="serial-num">3.</div>
                         <div class="step-details">
@@ -275,9 +298,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="arrow3">
+                    <!--<div class="arrow3">
                         <img src="./assets/arrow.png"/>
-                    </div>
+                    </div>-->
                     <div class="step">
                         <div class="serial-num">4.</div>
                         <div class="step-details">
@@ -317,21 +340,16 @@
         <div class="container">
             <div class="testimonals-main">
                 <div class="quotes">
-                    <img src="./assets/upper-quote.png"/>
-                    <img src="./assets/lower-quote.png"/>
+                    ❝❞
                 </div>
                 <div class="testimonies">
                     <h2>UNSERE KUNDEN</h2>
                 <div class="feedbacks">
                     <div class="feedback-card">
                         <div class="card-top">
-                            <div class="upper-quote">
-                                <img src="./assets/upper-quote.png"/>
-                            </div>
+                            <div class="upper-quote">❝</div>
                             <p class="sixteen-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <div class="lower-quote">
-                                <img src="./assets/lower-quote.png"/>
-                            </div>
+                            <div class="lower-quote">❞</div>
                         </div>
                         <div class="card-btm">
                             <div class="card-btm-content">
@@ -347,13 +365,9 @@
                     </div>
                     <div class="feedback-card">
                         <div class="card-top">
-                            <div class="upper-quote">
-                                <img src="./assets/upper-quote.png"/>
-                            </div>
+                            <div class="upper-quote">❝</div>
                             <p class="sixteen-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <div class="lower-quote">
-                                <img src="./assets/lower-quote.png"/>
-                            </div>
+                            <div class="lower-quote">❞</div>
                         </div>
                         <div class="card-btm">
                             <div class="card-btm-content">
@@ -369,13 +383,9 @@
                     </div>
                     <div class="feedback-card">
                         <div class="card-top">
-                            <div class="upper-quote">
-                                <img src="./assets/upper-quote.png"/>
-                            </div>
+                            <div class="upper-quote">❝</div>
                             <p class="sixteen-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            <div class="lower-quote">
-                                <img src="./assets/lower-quote.png"/>
-                            </div>
+                            <div class="lower-quote">❞</div>
                         </div>
                         <div class="card-btm">
                             <div class="card-btm-content">
@@ -395,43 +405,45 @@
         </div>
     </section>
     <!--Footer-->
-   <footer class="pad_both">
+   <Footer class="footer pad_both">
         <div class="container">
             <div class="footer-main">
                 <div class="footer-top">
                     <img src="./assets/logo.png"/>
                 </div>
                 <div class="footer-bottom">
-                    <div class="contact-info">
-                        <h4>Kontakt</h4>
-                        <div class="contact-links">
-                            <a href=""><img src="./assets/location.png"/>Herner Str. 186-190 D - 45699 Herten</a>
-                            <a href=""><img src="./assets/call.png"/>+49 (0) 2366 18000</a>
-                            <a href=""><img src="./assets/email.png"/>info@heukaeufer-folien.de</a>
-                        </div>
-                    </div>       
-                    <div class="quick-links">
-                        <h5>Quicks Links</h5>
-                        <ul>
-                            <a href=""><li>Produkte </li></a>
-                            <a href=""><li>Kontakt </li></a>
-                            <a href=""><li>Nachhaltigkeit </li></a>
-                            <a href=""><li>Datenschutzerklärung </li></a>
-                            <a href=""><li>Über uns </li></a>
-                            <a href=""><li>Impressum  </li></a>
-                            <a href=""><li>Karriere </li></a>
-                            <a href=""><li>AGBs </li></a>
-                        </ul>
+                    <div class="links">
+                        <div class="contact-info">
+                            <h4>Kontakt</h4>
+                            <div class="contact-links">
+                                <a href=""><img src="./assets/location.png"/>Herner Str. 186-190 D - 45699 Herten</a>
+                                <a href=""><img src="./assets/call.png"/>+49 (0) 2366 18000</a>
+                                <a href=""><img src="./assets/email.png"/>info@heukaeufer-folien.de</a>
+                            </div>
+                        </div>    
+                        <div class="quick-links">
+                            <h5>Quicks Links</h5>
+                            <ul>
+                                <a href=""><li>Produkte </li></a>
+                                <a href=""><li>Kontakt </li></a>
+                                <a href=""><li>Nachhaltigkeit </li></a>
+                                <a href=""><li>Datenschutzerklärung </li></a>
+                                <a href=""><li>Über uns </li></a>
+                                <a href=""><li>Impressum  </li></a>
+                                <a href=""><li>Karriere </li></a>
+                                <a href=""><li>AGBs </li></a>
+                            </ul>
+                        </div>    
                     </div>
                     <div class="parter-logo">
                         <img src="./assets/parter-1.png"/>
                         <img src="./assets/parter-2.png"/>
                         <img src="./assets/parter-3.png"/>
-                    </div>
+                    </div> 
                 </div>    
             </div>
         </div>
-    </footer>
+    </Footer>
     <section class="terms">
         <div class="container">
             <div class="terms-main">
@@ -441,17 +453,16 @@
         </div>
     </section>
     <script>
+
+        //Product List section slider//
         let slideIndex = 1;
         showSlides(slideIndex);
-        
         function plusSlides(n) {
           showSlides(slideIndex += n);
         }
-        
         function currentSlide(n) {
           showSlides(slideIndex = n);
         }
-        
         function showSlides(n) {                
           let i;
           let slides = document.getElementsByClassName("image-list");
@@ -467,6 +478,31 @@
           slides[slideIndex-1].style.display = "flex";  
           dots[slideIndex-1].className += " active";
         }
-        </script>    
+
+         //Hero-Bottom section slider//
+        let slide = 1;
+        showSlide(slide);
+        function plusSlide(x) {
+          showSlide(slide += x);
+        }
+        function currentSlides(x) {
+          showSlide(slide = x);
+        }
+        function showSlide(x) {                
+          let y;
+          let imgslides = document.getElementsByClassName("hero-images");
+          let dot = document.getElementsByClassName("indicator");
+          if (x > imgslides.length) {slide = 1}    
+          if (x < 1) {slide = imgslides.length}
+          for (y = 0; y < imgslides.length; y++) {
+            imgslides[y].style.display = "none";  
+          }
+          for (y = 0; y < dot.length; y++) {
+            dot[y].className = dot[y].className.replace(" active", "");
+          }
+          imgslides[slide-1].style.display = "flex";  
+          dot[slide-1].className += " active";
+        }
+    </script>    
 </body>   
 </html>       
