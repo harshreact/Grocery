@@ -201,7 +201,6 @@ span{
     display: flex;
     justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 .hero-container{
     padding: 0;
@@ -257,7 +256,6 @@ span{
 }
 .FoodWaste-main{
     display: flex;
-    max-width: 1123px;
     gap: 130px;
 }
 .FoodWaste-left{
@@ -366,12 +364,14 @@ span{
     display: none;
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
 }
 .image-box{
     background-color: var(--white);
     border: 1px solid var(--black);
     border-radius: 20px;
-    width: 30%;
+    width: 60%;
+    aspect-ratio: 1;
 }
 .image-box img{
     padding: 9px 25px;
@@ -698,25 +698,39 @@ div.footer-main::after{
 @media screen and (max-width:1024px){
     .container{
         width: 100%;
-        padding: 0 50px;
+
     }
     .image{
-        padding-top: 30px;
+        width: 90px;
+        margin-top: 0;
+    }
+    div.image::after{
+        width: 100px;
+        top: 25px;
+        left: -5px;
     }
     h2,.title_h2{
         font-size: 50px;
     }
+    
     .FoodWaste-main{
-        gap: 0px;
+        gap: 30px;
+    }
+    .service-card{
+        gap: 10px;
     }
     .product-list-main{
         padding: 100px;
     }
-    .quotes{
-        display: none;
-    }
     .card-btm-content{
         padding: 10px 20px;
+    }
+    .yellow-btn{
+        padding: 10px 20px;
+    }
+    div.step:not(:last-child)::after{
+        top: -28px;
+        left: 135px;
     }
     .footer-top{
         width: 35%;
@@ -767,10 +781,6 @@ div.footer-main::after{
     }
 }
 @media screen and (max-width:768px){
-    .container{
-        width: 100%;
-        padding: 0 50px;
-    }
     .nav-panel ul{
         gap: 20px;
     }
@@ -779,23 +789,34 @@ div.footer-main::after{
     }
     .hero-left{
         width: 100%;
+        padding-top: 50px;
+    }
+    .hero-left h3{
+        margin-bottom: 0;
     }
     .hero-right{
         display: none;
     }
     .image{
-        padding-top: 10px;
-        width: 20%;
+        width: 115px;
     }
-    h2,.title_h2{
-        font-size: 35px;
+    div.image::after{
+        width: 120px;
+        height: 120px;
+        left: -3px;
+        top: 15px;
+    }
+    .FoodWaste-main{
+        gap: 10px;
+    }
+    .left-content{
+        gap: 10px;
     }
     .btn{
         padding: 10px 20px;
     }
     .product-list-main{
         padding: 50px;
-        gap: 25px;
     }
     h5,.title_h5{
         font-size: 20px;
@@ -803,11 +824,6 @@ div.footer-main::after{
     .service-card,.process-chart{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-    }
-    .serial-num{
-        width: 70px;
-        height: 70px;
-        font-size: 40px;
     }
     /*.card-btm-content{
         padding: 10px 15px;
@@ -821,6 +837,9 @@ div.footer-main::after{
     .author-img{
         display: none;
     }*/
+    div.step:not(:last-child)::after{
+        display: none;
+    }
     .feedbacks{
         display: grid;
     }
@@ -840,8 +859,8 @@ div.footer-main::after{
     div.footer-main::after{
         width: 485px;
         height: 407px;
-        transform: rotate(12deg);
-        top: -190px;
+        transform: rotate(20deg);
+        top: -265px;
     }
 }
 @media screen and (max-width:600px){
